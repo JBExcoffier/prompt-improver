@@ -1,0 +1,9 @@
+# Model names must be unique globally across all categories
+
+EXTERNAL_API_MODELS:
+  - gpt-4.1-nano
+  - gpt-4.1-mini
+  - gpt-4.1
+
+LOCAL_MODELS:
+  - LocalSmolLM135m
