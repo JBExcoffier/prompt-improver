@@ -1,6 +1,6 @@
 # Auto prompt improver using DSPy
 
-👋 Welcome to the repo with all the reproductible code as well as images used for the _Auto prompt improver using DSPy_ blogpost on Medium.
+👋 Welcome to the repo with all the reproductible code as well as images used for the [_Auto prompt improver using DSPy_ blogpost on Medium](https://medium.com/@jb.excoffier/auto-prompt-improver-using-dspy-c095c9c402ef).
 
 
 
@@ -11,7 +11,7 @@ This repo contains a benchmark of a prompt improver technique on an arithmetic d
 
 🐍 The code is in Python. It also uses [vLLM](https://docs.vllm.ai/en/latest/) to run language models locally.
 
-📖 The blogost is accessible on Medium here : **TODO**
+📖 The blogost is accessible on Medium here : **https://medium.com/@jb.excoffier/auto-prompt-improver-using-dspy-c095c9c402ef**
 
 
 ## _Folder structure_
@@ -39,7 +39,7 @@ LOCAL_BASE_URL=http://0.0.0.0:8080/v1
 ```
 
 
-👏 You can follow the blogpost (**TODO**) to set up and run everything correctly !
+👏 You can follow the [blogpost](https://medium.com/@jb.excoffier/auto-prompt-improver-using-dspy-c095c9c402ef) to set up and run everything correctly !
 
 ⌨️ Still, here is a **quick view of all commands** that need to be executed at the root of the project to run the benchmark and explore the results :
 
