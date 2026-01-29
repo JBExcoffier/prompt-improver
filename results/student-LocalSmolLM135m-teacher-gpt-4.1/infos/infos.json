@@ -1,0 +1,14 @@
+{
+    "name": "student-LocalSmolLM135m-teacher-gpt-4.1",
+    "prompt": "Given an arithmetic expression that may include integers, addition (+), subtraction (-), multiplication (*), division (/), and nested parentheses, carefully evaluate the expression by following the correct mathematical order of operations (parentheses first, then multiplication/division, then addition/subtraction). Parse and compute the expression step by step, ensuring all calculations are performed accurately and parentheses are respected. Output only the final numeric result of the expression.",
+    "template-messages": [
+        {
+            "role": "system",
+            "content": "Your input fields are:\n1. `arithmetic_expression` (str): Arithmetic expression to evaluate.\n\nYour output fields are:\n1. `result` (float): Evaluated result from the given arithmetic expression.\n\nAll interactions will be structured in the following way, with the appropriate values filled in.\n\n[[ ## arithmetic_expression ## ]]\n{arithmetic_expression}\n\n[[ ## result ## ]]\n{result}        # note: the value you produce must be a single float value\n\n[[ ## completed ## ]]\n\nIn adhering to this structure, your objective is: \n        Given an arithmetic expression that may include integers, addition (+), subtraction (-), multiplication (*), division (/), and nested parentheses, carefully evaluate the expression by following the correct mathematical order of operations (parentheses first, then multiplication/division, then addition/subtraction). Parse and compute the expression step by step, ensuring all calculations are performed accurately and parentheses are respected. Output only the final numeric result of the expression."
+        },
+        {
+            "role": "user",
+            "content": "[[ ## arithmetic_expression ## ]]\n{INPUT}\n\nRespond with the corresponding output fields, starting with the field `[[ ## result ## ]]` (must be formatted as a valid Python float), and then ending with the marker for `[[ ## completed ## ]]`."
+        }
+    ]
+}

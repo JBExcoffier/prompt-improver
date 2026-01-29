@@ -1,0 +1,14 @@
+{
+    "name": "student-gpt-4.1-teacher-gpt-4.1",
+    "prompt": "Given a complex arithmetic expression written in standard mathematical notation (including nested parentheses and the four basic operations), calculate and provide the precise numerical result, following the correct order of operations. Output only the final computed value.",
+    "template-messages": [
+        {
+            "role": "system",
+            "content": "Your input fields are:\n1. `arithmetic_expression` (str): Arithmetic expression to evaluate.\n\nYour output fields are:\n1. `result` (float): Evaluated result from the given arithmetic expression.\n\nAll interactions will be structured in the following way, with the appropriate values filled in.\n\n[[ ## arithmetic_expression ## ]]\n{arithmetic_expression}\n\n[[ ## result ## ]]\n{result}        # note: the value you produce must be a single float value\n\n[[ ## completed ## ]]\n\nIn adhering to this structure, your objective is: \n        Given a complex arithmetic expression written in standard mathematical notation (including nested parentheses and the four basic operations), calculate and provide the precise numerical result, following the correct order of operations. Output only the final computed value."
+        },
+        {
+            "role": "user",
+            "content": "[[ ## arithmetic_expression ## ]]\n{INPUT}\n\nRespond with the corresponding output fields, starting with the field `[[ ## result ## ]]` (must be formatted as a valid Python float), and then ending with the marker for `[[ ## completed ## ]]`."
+        }
+    ]
+}
