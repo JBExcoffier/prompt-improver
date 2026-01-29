@@ -102,9 +102,7 @@ class DatasetManager:
         print("Loading golden dataset.")
         expressions = pandas.read_parquet(
             path=self.env_manager.golden_dataset_path
-        ).head(
-            20
-        )  # TODO: remove .head to run on whole dataset
+        ).head()
         print(f"Golden dataset loaded with {len(expressions)} arithmetic expressions.")
         return expressions
 
